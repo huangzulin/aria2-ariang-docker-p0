@@ -33,7 +33,7 @@ Aria2 + AriaNg
 ### 快速运行
 
 ```shell
-  docker run -d --name aria2-ui-p0 -p 80:80 -p 6800:6800 -v /data:/data huangzulin/aria2-ui-p0
+  docker run -d --restart=always --name aria2-ui-p0 -p 80:80 -p 6800:6800 -v /data:/data huangzulin/aria2-ui-p0
 ```
 
 * Aria2: <http://yourip>
