@@ -18,7 +18,7 @@ Aria2 + AriaNg
 ### 快速运行
 
 ```shell
-  docker run -d --name aria2-ui-pi -p 80:80 -p 6800:6800 -v /data:/data --restart=always huangzulin/aria2-ui-pi
+  docker run -d --name aria2-ui-p0 -p 80:80 -p 6800:6800 -v /data:/data --restart=always huangzulin/aria2-ui-p0
 ```
 
 * Aria2: <http://yourip>
@@ -26,7 +26,7 @@ Aria2 + AriaNg
 * 请使用 admin/admin 进行登录
 ### 开启所有功能
 ```shell
-  docker run -d --name ariang -p 80:80 -p 6800:6800 -p 443:443 -e ENABLE_AUTH=true -e RPC_SECRET=Hello -e DOMAIN=example.com -e ARIA2_USER=user -e ARIA2_PWD=pwd -v /yourdata:/data -v /yoursslkeys/:/root/conf/key -v <to your aria2.conf>:/root/conf/aria2.conf huangzulin/aria2-ui-pi
+  docker run -d --name ariang -p 80:80 -p 6800:6800 -p 443:443 -e ENABLE_AUTH=true -e RPC_SECRET=Hello -e DOMAIN=example.com -e ARIA2_USER=user -e ARIA2_PWD=pwd -v /yourdata:/data -v /yoursslkeys/:/root/conf/key -v <to your aria2.conf>:/root/conf/aria2.conf huangzulin/aria2-ui-p0
 ```
 
 ### 支持的 Docker 环境变量
@@ -46,9 +46,9 @@ Aria2 + AriaNg
 ## 自行构建镜像
 
 ```
-docker build -t huangzulin/aria2-ui-pi .
+docker build -t huangzulin/aria2-ui-p0 .
 ```
 
 ## Docker Hub
 
-  <https://hub.docker.com/r/huangzulin/aria2-ui-pi/>
+  <https://hub.docker.com/r/huangzulin/aria2-ui-p0/>
